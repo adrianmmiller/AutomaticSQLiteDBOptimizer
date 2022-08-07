@@ -33,9 +33,9 @@ The schedule and loglevel can be changed by an external file on sdcard:
 
 2. Inside create the follow key=value pairs to suit your preference:
 
-*interval=x   (where x is the number of days between script runs, for the love of god do not put 1, there is no benefit and you just heighten the possbility of corruption)
+*interval=x*   (where x is the number of days between script runs, for the love of god do not put 1, there is no benefit and you just heighten the possbility of corruption)
 
-*loglevel=x   (where 1 is detailed logging and 0 is basic (default))
+*loglevel=x*   (where 1 is detailed logging and 0 is basic (default))
 
 ### Requirements: ###
 
