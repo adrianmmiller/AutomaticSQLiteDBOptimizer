@@ -51,7 +51,7 @@ Magisk Module Extended, which is available for here for module creators
 https://github.com/Zackptg5/MMT-Extended/
 
 
-All other work is credited above and ** no one may fork or re-present this module as their own for the purposes of trying to
+All other work is credited above and **no one may fork or re-present this module as their own for the purposes of trying to
 monetize this module or its content without all parties permission. The module comes specifically without an overall license
 for this intent.**
 
