@@ -1,1 +1,0 @@
-Optimizes SQL databases on boot. Requires an SQLite 3 Binary - Try my SQLite3 Universal Binaries module.
