@@ -33,9 +33,9 @@ The schedule and loglevel can be changed by an external file on sdcard:
 
 2. Inside create the follow key=value pairs to suit your preference:
 
-* interval=x   (where x is the number of days between script runs, for the love of god do not put 1, there is no benefit and you just heighten the possbility of corruption)
+*interval=x   (where x is the number of days between script runs, for the love of god do not put 1, there is no benefit and you just heighten the possbility of corruption)
 
-* loglevel=x   (where 1 is detailed logging and 0 is basic (default))
+*loglevel=x   (where 1 is detailed logging and 0 is basic (default))
 
 ### Requirements: ###
 
@@ -48,12 +48,12 @@ https://github.com/stylemessiah/SQLite3UniversalBinaries
 Dont forget you need to download a named SQLite3UniversalBinaries.vx.x.zip file from the Releases page under Assets. Do not try installing the source code with Magisk Manager, it will not go as you expect
 
 
-** Please note:** the included LICENSE only covers the module components provided by the excellent work of Zack5tpg's Magisk Module Extended, which is available for here for module creators
+**Please note:** the included LICENSE only covers the module components provided by the excellent work of Zack5tpg's Magisk Module Extended, which is available for here for module creators
 
 https://github.com/Zackptg5/MMT-Extended/
 
 
-All other work is credited above and ** no one may fork or re-present this module as their own for the purposes of trying to monetize this module or its content without all parties permission. The module comes specifically without an overall license for this intent.**
+All other work is credited above and **no one may fork or re-present this module as their own for the purposes of trying to monetize this module or its content without all parties permission. The module comes specifically without an overall license for this intent.**
 
 
 ### Project Stats ###
