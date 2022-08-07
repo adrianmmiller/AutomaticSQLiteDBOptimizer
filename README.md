@@ -23,7 +23,7 @@ all .db files under /data.
 It runs a 1st run optimize after install (temp file optimsql_first_run on sdcard is used to enable this, and removed afetr first run), and then on schedule after that. 
 
 By default it logs just script progress to /storage/emulated/0/autosqlite.log, but you can choose to enable more detail in the log if you wish
-​
+
 
 ### User Configurable Options: ###
 
@@ -35,7 +35,7 @@ The schedule and loglevel can be changed by an external file on sdcard:
 
 * interval=x   (where x is the number of days between script runs, for the love of god do not put 1, there is no benefit and you just heighten the possbility of corruption)
 
-* loglevel=x   (where 1 is detailed loggign and 0 is basic (default))
+* loglevel=x   (where 1 is detailed logging and 0 is basic (default))
 
 ### Requirements: ###
 
