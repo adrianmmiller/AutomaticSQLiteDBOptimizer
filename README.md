@@ -36,7 +36,7 @@ The schedule and loglevel can be changed by an external file on sdcard:
 
 *interval=x*   (where x is the number of days between script runs, for the love of god do not put 1 (this goes out especially to the kind of people who put every app on their Magisk magiskhide/deny list) there is no benefit and you just heighten the possibility of corruption)
 
-*loglevel=x*   (where 1 is detailed logging and 0 is basic (default))
+*loglevel=x*   (where x is either 1 (detailed logging) or 0 is (basic logging - default))
 
 ### Requirements: ###
 
