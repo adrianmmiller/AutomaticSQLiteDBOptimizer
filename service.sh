@@ -42,35 +42,35 @@ function no_run_footer() {
 
 # main function
 function optimize () {
-	for i in $(find /data/* -iname "*.db"); do
-		sqlite3 "$i" 'VACUUM;'
-		resVac=$?
-		if [[ "$resVac" == "0" ]]; then
-			resVac="SUCCESS"
-		elif [[ "$resVac" != "0" ]]; then
-			resVac="FAILED(ERRCODE)-$resVac"
-		fi
-		sqlite3 "$i" 'REINDEX;'
-		resIndex=$?
-		if [[ "$resIndex" == "0" ]]; then
-			resIndex="SUCCESS"
-		elif [[ "$resIndex" != "0" ]]; then
-			resIndex="FAILED(ERRCODE)-$resIndex"
-		fi
-		sqlite3 "$i" 'ANALYZE;'
-		resAnlz=$?
-		if [[ "$resAnlz" == "0" ]]; then
-			resAnlz="SUCCESS"
-		elif [[ "$resAnlz" != "0" ]]; then
-			resAnlz="FAILED(ERRCODE)-$resAnlz"
-		fi
-		# When loglevel is set to 1 every databases optmized status is added to log 
-		# warning, it can get lengthy of you enable this
-		#
-		if [ $loglevel -eq 1 ]; then
-		echo -ne " Database $i: VACUUM=$resVac REINDEX=$resIndex ANALYZE=$resAnlz\n" 2>&1 | ts '[%d/%m/%Y %H:%M:%S]' | tee -a $log_file
-		fi
-	done
+for i in $(find /data/* -iname "*.db"); do
+    sqlite3 "$i" 'VACUUM;'
+    resVac=$?
+    if [[ "$resVac" == "0" ]]; then
+        resVac="SUCCESS"
+    elif [[ "$resVac" != "0" ]]; then
+        resVac="FAILED(ERRCODE)-$resVac"
+    fi
+    sqlite3 "$i" 'REINDEX;'
+    resIndex=$?
+    if [[ "$resIndex" == "0" ]]; then
+        resIndex="SUCCESS"
+    elif [[ "$resIndex" != "0" ]]; then
+        resIndex="FAILED(ERRCODE)-$resIndex"
+    fi
+    sqlite3 "$i" 'ANALYZE;'
+    resAnlz=$?
+    if [[ "$resAnlz" == "0" ]]; then
+        resAnlz="SUCCESS"
+    elif [[ "$resAnlz" != "0" ]]; then
+        resAnlz="FAILED(ERRCODE)-$resAnlz"
+    fi
+    # When loglevel is set to 1 every databases optmized status is added to log 
+    # warning, it can get lengthy of you enable this
+    #
+    if [ $loglevel -eq 1 ]; then
+        echo -ne " Database $i: VACUUM=$resVac REINDEX=$resIndex ANALYZE=$resAnlz\n" 2>&1 | ts '[%d/%m/%Y %H:%M:%S]' | tee -a $log_file
+    fi
+done
 }
 
 
@@ -153,5 +153,3 @@ else
 fi
 
 exit
-
-
