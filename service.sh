@@ -79,7 +79,7 @@ while [ "$(getprop sys.boot_completed)" != "1" ]; do
     sleep 120
 done
 
-# wait until avg cpu usdage is less than 30%
+# wait until avg cpu usage is less than 30%
 wait_avg_cpu_usage 30
 
 # read options from options file if it exists
