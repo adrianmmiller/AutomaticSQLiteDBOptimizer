@@ -7,7 +7,7 @@ log_file="/storage/emulated/0/autosqlite.log"
 # delete logfile if older than 7 days
 find /storage/emulated/0/ -name "$log_file" -type f -maxdepth 1 -mtime +7d -delete
 
-wait_avg_cpu_usage() {
+function wait_avg_cpu_usage() {
 #wait 60 seconds
 sleep 60
 # set threshold as first argument passed to function
@@ -41,7 +41,7 @@ function no_run_footer() {
 }
 
 # main function
-function optimize () {
+function optimize() {
 for i in $(find /data/* -iname "*.db"); do
     sqlite3 "$i" 'VACUUM;'
     resVac=$?
