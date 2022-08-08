@@ -2,7 +2,8 @@
 
 Automatically optimizes SQLite databases on boot, on schedule, every X days
 
-Just a quick and dirty adaptation of an old SQLite3 optimizer script from init.d days to a Magisk Module using a service.sh script instead, with an internal date offset mechanism to run the script every X days (default: 3). 
+Just a quick and dirty adaptation of an old SQLite3 optimizer script from init.d days to a Magisk Module using a service.sh script instead, 
+with an internal date offset mechanism to run the script every X days (default: 3 - which is plenty, and specifically to stop silliness).
 
 The script will wait until boot is completed AND then until avg CPU usage is under 30%, to minimise the risk of possible corruption. 
 
@@ -33,7 +34,7 @@ The schedule and loglevel can be changed by an external file on sdcard:
 
 2. Inside create the follow key=value pairs to suit your preference:
 
-*interval=x*   (where x is the number of days between script runs, for the love of god do not put 1, there is no benefit and you just heighten the possbility of corruption)
+*interval=x*   (where x is the number of days between script runs, for the love of god do not put 1 (this goes out especially to the kind of people who put every app on their Magisk magiskhide/deny list) there is no benefit and you just heighten the possibility of corruption)
 
 *loglevel=x*   (where 1 is detailed logging and 0 is basic (default))
 
