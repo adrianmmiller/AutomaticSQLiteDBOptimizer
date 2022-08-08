@@ -142,12 +142,13 @@ if [ -f /storage/emulated/0/autosqlite_first_run ]; then
 # and the current date with the given minimum delay in seconds. 
 # Exit with error code 1 if the minimum delay is not exceeded yet.
 elif test "$(($(date "+%s")-$(date -r "$0" "+%s")))" -lt "$seconds" ; then
-    # show footer we use for if optimize has run
+    # show footer we use for if optimize has NOT run
     no_run_footer
 else	
     echo ' Automatic SQLite Optimization: Started' 2>&1 | ts '[%d/%m/%Y %H:%M:%S]' | tee -a $log_file
     # run sqlite3 optimization
     optimize
+    # show footer we use for if optimize has run    
     run_footer
 fi
 
