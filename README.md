@@ -32,7 +32,7 @@ The schedule and loglevel can be changed by an external file on sdcard:
 
 1. Create a file named **autosqlite_options** on **sdcard (/storage/emulated/0/)**
 
-2. Inside create the follow key=value pairs to suit your preference:
+2. Inside create the following key=value pairs to suit your preference:
 
 *interval=x*   (where x is the number of days between script runs, for the love of god do not put 1 (this goes out especially to the kind of people who put every app on their Magisk magiskhide/deny list) there is no benefit and you just heighten the possibility of corruption)
 
