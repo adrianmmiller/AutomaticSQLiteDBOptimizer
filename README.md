@@ -2,7 +2,7 @@
 
 Automatically optimizes SQLite databases on boot, on schedule, every X days
 
-Just a quick and dirty adaptation of an old SQLite3 optimizer script from init.d days to a Magisk Module using a service.sh script instead, 
+Just a quick and dirty adaptation of an old SQLite3 optimizer script from init.d days (i think from following a chain of zips that it originates with XDA member **mcbyte_it** [here](https://forum.xda-developers.com/t/script-run-init-d-scripts-once-every-n-days-zipalign-sqlite3-others.2084573/)) (who's zipalign is also on the todo list, another reason i was able to trace to him because i was working on that too) to a Magisk Module using a service.sh script instead, 
 with an internal date offset mechanism to run the script every X days (default: 3 - which is plenty, and specifically to stop silliness).
 
 The script will wait until boot is completed AND then until avg CPU usage is under 30%, to minimise the risk of possible corruption. 
