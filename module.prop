@@ -1,7 +1,0 @@
-id=autosqlitedboptimizer
-name=Automatic SQLite DB Optimizer
-version=v1.0
-versionCode=1
-author=73sydney
-description=Automatically optimizes SQLite databases on boot, on schedule every X days. Requires an SQLite 3 Binary - Try my SQLite3 Universal Binaries module.
-updateJson=
