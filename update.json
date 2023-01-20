@@ -1,6 +1,6 @@
 {
   "version": "v1.1",
-  "versionCode": 11,
+  "versionCode": 1,
   "zipUrl": "https://github.com/stylemessiah/AutomaticSQLiteDBOptimizer/releases/download/v1.1/AutomaticSQLiteDBOptimizer.v1.1.zip",
   "changelog": "https://raw.githubusercontent.com/stylemessiah/AutomaticSQLiteDBOptimizer/main/changelog.md"
 }
