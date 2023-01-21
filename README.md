@@ -43,7 +43,7 @@ The schedule and loglevel can be changed by an external file on sdcard:
 This module requires a working SQLite3 binary. If your ROM does not provide one (you can can check via typing *sqlite3* into a terminal), you can choose to use my SQLite3UniversalBinaries module located here:
 
 
-https://github.com/stylemessiah/SQLite3UniversalBinaries
+https://github.com/adrianmmiller/SQLite3UniversalBinaries
 
 
 Dont forget you need to download a named SQLite3UniversalBinaries.vx.x.zip file from the Releases page under Assets. Do not try installing the source code with Magisk Manager, it will not go as you expect
@@ -59,6 +59,6 @@ All other work is credited above and **no one may fork or re-present this module
 
 ### Project Stats ###
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/stylemessiah/AutomaticSQLiteDBOptimizer?label=Release&style=plastic) ![GitHub Release Date](https://img.shields.io/github/release-date/stylemessiah/AutomaticSQLiteDBOptimizer?label=Release%20Date&style=plastic) ![GitHub Releases](https://img.shields.io/github/downloads/stylemessiah/AutomaticSQLiteDBOptimizer/latest/total?label=Downloads%20%28Latest%20Release%29&style=plastic) ![GitHub All Releases](https://img.shields.io/github/downloads/stylemessiah/AutomaticSQLiteDBOptimizer/total?label=Total%20Downloads%20%28All%20Releases%29&style=plastic)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/adrianmmiller/AutomaticSQLiteDBOptimizer?label=Release&style=plastic) ![GitHub Release Date](https://img.shields.io/github/release-date/adrianmmiller/AutomaticSQLiteDBOptimizer?label=Release%20Date&style=plastic) ![GitHub Releases](https://img.shields.io/github/downloads/adrianmmiller/AutomaticSQLiteDBOptimizer/latest/total?label=Downloads%20%28Latest%20Release%29&style=plastic) ![GitHub All Releases](https://img.shields.io/github/downloads/adrianmmiller/AutomaticSQLiteDBOptimizer/total?label=Total%20Downloads%20%28All%20Releases%29&style=plastic)
 
 ​
